@@ -8,6 +8,5 @@ Cognitive Services で学習モデル（＝目的に合った認知機能）を�
 ワークショップは以下の順番で進めます。
 
 1. [**Cognitive Services** 全体を俯瞰する](01_CognitiveServices.md)
-2. [**Custom Vision** で特定分野の画像解析に強くなる](02_customvision.md)
-
+2. [**Custom Vision** で特定分野の画像解析に強くなる](02_CustomVision.md)
 事前の知識やワークショップの時間によっては、一部の手順を省略してもかまいません。
