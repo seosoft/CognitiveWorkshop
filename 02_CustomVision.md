@@ -14,13 +14,13 @@
 <img src="Assets/Samples/jomon_sample.jpg" width="180px" />
 <img src="Assets/Samples/yayoi_sample.jpg" width="180px" />
 
-最初の画像は、"a pair of chain" と分析されました。"confidence" は 0.5 程度で、あまり自信がなさそうですし、実際に間違った答えを返しています。<br />
-二つ目の画像は、"a vase sitting on a table" と分析されました。"confidence" は 0.5 程度です。こちらは間違っているとはいえませんが、期待した答えからは遠いようです。
+最初の画像は "a pair of chain" と分析されました。"confidence" は 0.5 程度で、あまり自信がなさそうです。実際、間違った答えを返しています。<br />
+二つ目の画像は、"a vase sitting on a table" と分析されました。"confidence" は 0.5 程度です。こちらは間違いとはいえませんが、期待した答えからは遠いようです。
 
-※Computer Vision の学習モデルも随時更新されます。その時により Caption や Confidence の値は異なるかもしれません。
+※Computer Vision の学習モデルは随時更新されます。その時により Caption や Confidence の値は異なるかもしれません。
 
 ---
-これらの画像を "縄文土器"、"弥生土器" として認識してほしいような場合に、Custom Vision を利用します。
+これらの画像を "縄文土器"、"弥生土器" として認識してほしい場合に、Custom Vision を利用します。
 
 実際に Custom Vision を試してみます。
 
@@ -42,38 +42,38 @@
 <img src="Assets/Images/customvision_signin.png" width="420px" />
 
 3. "Projects" ページが開いたら、**"New Project"** をクリックします。
-4. 以下の内容で Custom Vision のプロジェクトを作成します。最後に "Create project" をクリックします。
+4. 以下の内容で Custom Vision のプロジェクトを作成します。最後に **"Create project"** をクリックします。
     - Name ・・・任意の名前
-    - Project Type ・・・ "Classification" 画像の分類をすることを意味します。
-    - Domains ・・・ "General" 一般的な画像であることを意味します。食べ物、建物などは適切なドメインを選択するといいようです。
+    - Project Type ・・・ "Classification" : 画像の分類をすることを意味します。
+    - Domains ・・・ "General" : 一般的な画像であることを意味します。食べ物、建物などは適切なドメインを選択するといいようです。
 
 <img src="Assets/Images/cv_newproject.png" width="420px" />
 
-5. "TRAINING IMAGES" の左肩の "+" ボタン、または中央の "Add Images" をクリックします。
+5. **"TRAINING IMAGES"** の **左肩の "+"** ボタン、または中央の **"Add Images"** をクリックします。
 
 <img src="Assets/Images/cv_addimages.png" width="420px" />
 
-6. "Browse local files" をクリックして、学習させる画像ファイル (教師データ) を選択します。 <br />
+6. **"Browse local files"** をクリックして、学習させる画像ファイル (教師データ) を選択します。 <br />
 ここではリポジトリを展開したものから "SampleData\CustomVision\Doki\Jomon" フォルダーの全てのファイルを選択します。
 
 <img src="Assets/Images/cv_addimages_browselocalfiles.png" width="420px" />
 <img src="Assets/Images/cv_addimages_selectimages.png" width="320px" />
 
-7. 選択した画像ファイルにタグを付けます。ここでは "Jomon" とします。続いて "Upload n files" をクリックします。
+7. 選択した画像ファイルに **タグ** を付けます。ここでは **"Jomon"** とします。続いて "Upload n files" をクリックします。
 
 <img src="Assets/Images/cv_uploadfiles.png" width="420px" />
 
 8. 同じ手順で "SampleData\CustomVision\Doki\Yayoi" フォルダーの全てのファイルをアップロードします。 <br />
-ここでは、タグは "Yayoi" とします。
+ここでは、タグは **"Yayoi"** とします。
 9. もしタグをつけ忘れた場合、または間違ったタグを付けてしまった場合は、アップロード後にタグを変更することができます。 <br />
-"TRAINING IMAGES" に表示されている画像で、タグをつけ忘れた、または間違ったタグをつけた画像を選択します。続いて、正しいタグを指定して "Save and close" をクリックします。
+"TRAINING IMAGES" に表示されている画像で、タグをつけ忘れた、または間違ったタグをつけた **画像を選択** します。続いて、**正しいタグ** を指定して "Save and close" をクリックします。
 
 <img src="Assets/Images/cv_selectfile_edittag.png" width="420px" />
 <img src="Assets/Images/cv_edittag.png" width="420px" />
 
 10. アップロードした画像を学習します。 <br />
-"Train" ボタンをクリックして学習を開始します。少し待つと "PERFORMANCE" 画面が表示されて、学習が完了したことが分かります。 <br />
-Precision および Recall の値を見ると、今回の画像は非常に高い割合で分類できたことが分かります。「賢い」 AI だと言えそうです。
+**"Train"** ボタンをクリックして学習を開始します。少し待つと **"PERFORMANCE"** 画面が自動的に表示されて、学習が完了したことが分かります。 <br />
+**Precision** および **Recall** の値を見ると、今回の画像は非常に高い割合で分類できたことが分かります。**「賢い」 AI** だと言えそうです。
 
 <img src="Assets/Images/cv_trainbutton.png" width="420px" />
 <img src="Assets/Images/cv_trained.png" width="420px" />
@@ -85,9 +85,9 @@ Precision および Recall の値を見ると、今回の画像は非常に高�
 | Precision | それぞれに分類したもののうち、実際に事前にそのタグが付いていた画像の割合。 <br />例えば "Jomon" に分類された画像のうち、実際に "Jomon" タグがを付けてアップロードした画像の割合 |
 | Recall | 事前に付いていたタグ通りに分類された画像の割合。 <br />例えば "Jomon" タグを付けてアップロードした画像のうち、実際に "Jomon" に分類された画像の割合 |
 
-11. 未知の画像 (学習に使っていない画像) を、学習モデルに適用してみます。 <br />
-"Quick Test" をクリックします。<br />
-"Browse local file" をクリックして、"SampleData\CustomVision\Doki\Predict" フォルダーの画像を 1つ選びます。 <br />
+11. **未知の画像** (学習に使っていない画像) を、学習モデルに適用してみます。 <br />
+**"Quick Test"** をクリックします。<br />
+**"Browse local file"** をクリックして、"SampleData\CustomVision\Doki\Predict" フォルダーの画像を 1つ選びます。 <br />
 またはネットで画像を探して "Enter Image URL" にアドレスを入力してもかまいません。 <br />
 例えば以下の画像だと、99.9% "Jomon" だと予測されました。
 
@@ -102,7 +102,7 @@ Precision および Recall の値を見ると、今回の画像は非常に高�
 ***
 ## 別の学習モデル
 
-別の学習モデルを作って、精度に違いが出ることを確認してみます。
+**別の学習モデル** を作って、精度に違いが出ることを確認してみます。
 
 同様の手順で、"SampleData\CustomVision\Token" フォルダーの画像を学習してみます。
 
@@ -110,7 +110,7 @@ Precision および Recall の値を見ると、今回の画像は非常に高�
 ここでは "Token" (刀剣の意味) とします。
 2. "SampleData\CustomVision\Token\Tachi" フォルダー内の画像を **"Tachi"** タグでアップロードします。
 3. "SampleData\CustomVision\Token\Katana" フォルダー内の画像を **"Katana"** タグでアップロードします。
-4. Custom Vision のメニューで "Train" を選択して、アップロードした画像を学習します。
+4. Custom Vision のメニューで **"Train"** を選択して、アップロードした画像を学習します。
 5. 学習結果を見ます。 <br />
 先ほどの学習モデルと比べて、"Precision"、"Recall" とも数値が低いことが分かります。<br />
 特に、"Tachi" タグのほうが数値が低くなっています。
@@ -125,14 +125,14 @@ Precision および Recall の値を見ると、今回の画像は非常に高�
 
 <br /><br />
 **考察** <br />
-前のプロジェクトと比べて、数値が低いこと、また未知の画像の解析も間違いが多い理由は何だと思います。 <br />
-また、より賢くするには、どのようにしたらいいと思いますか。
+前のプロジェクトと比べて、数値が低いこと、また未知の画像の解析も間違いが多い理由は何だと思いますか。 <br />
+また、学習モデルを賢くするには、どのようにしたらいいと思いますか。
 <br /><br />
 
 ***
 以上で、Custom Vision の学習の手順が分かったと思います。
 
-認識したい画像が明確であれば、Custom Vision を使って人出よりも低コストで画像の分類ができます。 <br /><br />
+認識したい画像が明確であれば、Custom Vision を使って非常に低コストで画像の分類ができます。 <br /><br />
 
-ただし今回のワークショップでわかったように、万能ではありません。 <br />
-どのような用途で使えそうか、またより賢くするにはどうしたらいいかをよく考えるとよいでしょう。
+今回のワークショップでわかったように、現在の AI は決して万能ではありません。 <br />
+どのような用途で使えそうか、より賢くするにはどうしたらいいかをよく考えながら利用するとよいでしょう。
