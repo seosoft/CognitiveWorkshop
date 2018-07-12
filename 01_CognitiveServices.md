@@ -46,8 +46,7 @@ Cognitive Services のサイトには、各機能のデモが用意されてい�
 実際に、画像を分析してみます。
 
 1. [Computer Vision のページ](https://azure.microsoft.com/ja-jp/services/cognitive-services/computer-vision/) を開きます。
-2. **画像の分析** の位置までスクロールします。
-
+2. **画像の分析** の位置までスクロールします。 <br /><br />
 <img src="Assets/Images/computervision_analyze_image.png" width="420px" />
 
 3. 表示されている **サンプル画像** をクリックします。
@@ -79,8 +78,7 @@ Cognitive Services のサイトには、各機能のデモが用意されてい�
 ### 顔検証
 
 1. [Face のページ](https://azure.microsoft.com/ja-jp/services/cognitive-services/face/) を開きます。
-2. **顔検出** の位置までスクロールします。
-
+2. **顔検出** の位置までスクロールします。 <br /><br >
 <img src="Assets/Images/face_facedetect.png" width="420px" />
 
 3. 表示されている **サンプル画像** をクリックします。
@@ -107,8 +105,7 @@ PC のカメラを使って、顔を傾ける、斜め横を向くなどして�
 ### テキストから情報を抽出
 
 1. [Text Analytics のページ](https://azure.microsoft.com/ja-jp/services/cognitive-services/text-analytics/) を開きます。
-2. **テキストから情報を抽出** の位置までスクロールします。
-
+2. **テキストから情報を抽出** の位置までスクロールします。 <br /><br />
 <img src="Assets/Images/ta_textanalytics.png" width="420px" />
 
 1. 日本語の文章を入力して、 **分析** をクリックします。
