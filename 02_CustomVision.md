@@ -33,48 +33,41 @@
 
 1. 学習用画像の取得します。 <br />
 [このリポジトリ (https://github.com/seosoft/CognitiveWorkshop)](https://github.com/seosoft/CognitiveWorkshop) にサンプル画像を含んでいます。<br />
-"Clone or download" から "Download ZIP" を選択して、リポジトリをダウンロードします。ダウンロード後に、ローカル PC の任意の場所に ZIP ファイルを展開すれば、サンプル画像が得られます。(SampleData\CustomVision フォルダー)
-
+"Clone or download" から "Download ZIP" を選択して、リポジトリをダウンロードします。ダウンロード後に、ローカル PC の任意の場所に ZIP ファイルを展開すれば、サンプル画像が得られます。(SampleData\CustomVision フォルダー) <br /><br />
 <img src="Assets/Images/download_githubrepo.png" width="420px" />
 
-2. [Custom Vision のページ](https://customvision.ai/) を開いて、**"SIGN IN"** をクリックします。<br />マイクロソフトアカウントでサインしてください。
-
+2. [Custom Vision のページ](https://customvision.ai/) を開いて、**"SIGN IN"** をクリックします。<br />マイクロソフトアカウントでサインしてください。 <br /><br />
 <img src="Assets/Images/customvision_signin.png" width="420px" />
 
 3. "Projects" ページが開いたら、**"New Project"** をクリックします。
 4. 以下の内容で Custom Vision のプロジェクトを作成します。最後に **"Create project"** をクリックします。
     - Name ・・・任意の名前
     - Project Type ・・・ "Classification" : 画像の分類をすることを意味します。
-    - Domains ・・・ "General" : 一般的な画像であることを意味します。食べ物、建物などは適切なドメインを選択するといいようです。
-
+    - Domains ・・・ "General" : 一般的な画像であることを意味します。食べ物、建物などを分類したい場合は、適切なドメインを選択するといいようです。
+  <br /><br />
 <img src="Assets/Images/cv_newproject.png" width="420px" />
 
-5. **"TRAINING IMAGES"** の **左肩の "+"** ボタン、または中央の **"Add Images"** をクリックします。
-
+5. **"TRAINING IMAGES"** の **左肩の "+"** ボタン、または中央の **"Add Images"** をクリックします。 <br /><br />
 <img src="Assets/Images/cv_addimages.png" width="420px" />
 
 6. **"Browse local files"** をクリックして、学習させる画像ファイル (教師データ) を選択します。 <br />
-ここではリポジトリを展開したものから "SampleData\CustomVision\Doki\Jomon" フォルダーの全てのファイルを選択します。
-
+ここではリポジトリを展開したものから "SampleData\CustomVision\Doki\Jomon" フォルダーの全てのファイルを選択します。 <br /><br />
 <img src="Assets/Images/cv_addimages_browselocalfiles.png" width="420px" />
 <img src="Assets/Images/cv_addimages_selectimages.png" width="320px" />
 
-7. 選択した画像ファイルに **タグ** を付けます。ここでは **"Jomon"** とします。続いて "Upload n files" をクリックします。
-
+7. 選択した画像ファイルに **タグ** を付けます。ここでは **"Jomon"** とします。続いて "Upload n files" をクリックします。 <br /><br />
 <img src="Assets/Images/cv_uploadfiles.png" width="420px" />
 
 8. 同じ手順で "SampleData\CustomVision\Doki\Yayoi" フォルダーの全てのファイルをアップロードします。 <br />
 ここでは、タグは **"Yayoi"** とします。
 9. もしタグをつけ忘れた場合、または間違ったタグを付けてしまった場合は、アップロード後にタグを変更することができます。 <br />
-"TRAINING IMAGES" に表示されている画像で、タグをつけ忘れた、または間違ったタグをつけた **画像を選択** します。続いて、**正しいタグ** を指定して "Save and close" をクリックします。
-
+"TRAINING IMAGES" に表示されている画像で、タグをつけ忘れた、または間違ったタグをつけた **画像を選択** します。続いて、**正しいタグ** を指定して "Save and close" をクリックします。 <br /><br />
 <img src="Assets/Images/cv_selectfile_edittag.png" width="420px" />
 <img src="Assets/Images/cv_edittag.png" width="420px" />
 
 10. アップロードした画像を学習します。 <br />
 **"Train"** ボタンをクリックして学習を開始します。少し待つと **"PERFORMANCE"** 画面が自動的に表示されて、学習が完了したことが分かります。 <br />
-**Precision** および **Recall** の値を見ると、今回の画像は非常に高い割合で分類できたことが分かります。**「賢い」 AI** だと言えそうです。
-
+**Precision** および **Recall** の値を見ると、今回の画像は非常に高い割合で分類できたことが分かります。**「賢い」 AI** だと言えそうです。 <br /><br />
 <img src="Assets/Images/cv_trainbutton.png" width="420px" />
 <img src="Assets/Images/cv_trained.png" width="420px" />
 
@@ -89,8 +82,7 @@
 **"Quick Test"** をクリックします。<br />
 **"Browse local file"** をクリックして、"SampleData\CustomVision\Doki\Predict" フォルダーの画像を 1つ選びます。 <br />
 またはネットで画像を探して "Enter Image URL" にアドレスを入力してもかまいません。 <br />
-例えば以下の画像だと、99.9% "Jomon" だと予測されました。
-
+例えば以下の画像だと、99.9% "Jomon" だと予測されました。 <br /><br />
 <img src="Assets/Images/cv_quicktest.png" width="420px" />
 <img src="Assets/Images/cv_quicktest_selectimage.png" width="420px" />
 <img src="Assets/Images/cv_quicktest_result.png" width="420px" />
@@ -113,14 +105,12 @@
 4. Custom Vision のメニューで **"Train"** を選択して、アップロードした画像を学習します。
 5. 学習結果を見ます。 <br />
 先ほどの学習モデルと比べて、"Precision"、"Recall" とも数値が低いことが分かります。<br />
-特に、"Tachi" タグのほうが数値が低くなっています。
-
+特に、"Tachi" タグのほうが数値が低くなっています。 <br /><br />
 <img src="Assets/Images/cv_token_performance.png" width="420px" />
 
-1. 未知の画像 (学習に使っていない画像) を、学習モデルに適用してみます。 <br />
+6. 未知の画像 (学習に使っていない画像) を、学習モデルに適用してみます。 <br />
 "SampleData\CustomVision\Token\Predict" フォルダーの画像を使います。<br />
-前の手順でも分かる通り、"太刀" の画像が正しく認識できないことが多いことが確認できます。
-
+前の手順でも分かる通り、"太刀" の画像が正しく認識できないことが多いことが確認できます。 <br /><br />
 <img src="Assets/Images/cv_tachi_prediction.png" width="420px" />
 
 <br /><br />
