@@ -12,16 +12,18 @@
 
 1. [**PowerApps のサイト**](https://web.powerapps.com/) に接続します。
 2. **Office 365 のアカウント** でサインインを実行してみます。
-3. PowerApps のライセンスが割り当てられている場合は、**PowerApps ポータル画面** が開きます。<br />
+3. PowerApps のライセンスが割り当てられている場合は、**PowerApps サイト** が開きます。<br />
 準備は完了です。 [**PowerApps アプリ開発**](04_PowerApps.md) に進んでください。 <br /><br />
 
+上記の手順で、PowerApps のサイトを開けない場合は、PowerApps のライセンスが付与されていないことが考えられます。<br />
 PowerApps には **Community Plan** というプランがあります。これは Office 365 のアカウントを持っているが PowerApps のライセンスは付与されていない場合に利用できるものです。開発したアプリを社内で共有することはできませんが、自分一人で使用する範囲では無償で PowerApps が使えるというものです。 <br /><br />
+Office 365 のアカウントを持っている場合は、以下の手順で Community Plan を試してみてください。<br />
 
-4. **PowerApps Community Plan** にサインアップします。 <br />
+1. **PowerApps Community Plan** にサインアップします。 <br />
 [**PowerApps Community Plan**](https://powerapps.microsoft.com/ja-jp/communityplan) に接続して、**無料ですぐに開始** をクリックします。
-5. メールアドレスを入力してサインアップします。
-6. **サインイン画面**、**同意画面** が順に表示されるので、指示に従います。
-7. **PowerApps ポータル画面** が表示されれば、準備は完了です。 <br />[**PowerApps アプリ開発**](04_PowerApps.md) に進んでください。 <br /><br />
+2. メールアドレスを入力してサインアップします。
+3. **サインイン画面**、**同意画面** が順に表示されるので、指示に従います。
+4. **PowerApps ポータル画面** が表示されれば、準備は完了です。 <br />[**PowerApps アプリ開発**](04_PowerApps.md) に進んでください。 <br /><br />
 
 ---
 ## Office 365 のアカウントを持っていない場合
