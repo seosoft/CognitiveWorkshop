@@ -1,4 +1,4 @@
-# PowerApps で画像解析アプリを作成する
+# PowerApps で画像解析アプリを開発する
 
 [**PowerApps**](https://powerapps.microsoft.com/ja-jp/) は簡単にアプリケーションを開発できるツールです。
 
@@ -58,10 +58,9 @@ Custom Vision のサイトでコピーしておいた **Prediction Key** を入�
 <img src="Assets/Images/pa_cv_setting.png" width="420px" />
 
 ---
-## 新しいアプリの作成
+## 新しいアプリの開発
 
-ここまでで、新しく PowerApps アプリを作成する準備が整いました。<br />
-早速、アプリを作成します。<br /><br />
+ここまでで、新しく PowerApps アプリ開発の準備が整いました。<br /><br />
 
 1. PowerApps のホームページで、左ペインの **アプリ** をクリックします<br />
 <img src="Assets/Images/pa_menu_app_for_newapp.png" width="420px" />
