@@ -1,11 +1,12 @@
 # Cognitive Services ハンズオン (2018年7月版)
 
-このハンズオンは、**[Microsoft Cognitive Services](https://microsoft.com/cognitive)** を使って **AI 技術 (認知機能)** の理解を深めることを目的としています。<br />
-合わせて PoewrApps の簡単なアプリ開発手順も理解します。<br /><br />
+このハンズオンは、**[Microsoft Cognitive Services](https://microsoft.com/cognitive)** を使って **AI 技術 (認知機能)** の理解を深めることを目的としています。  
+合わせて PoewrApps の簡単なアプリ開発手順も理解します。
 
-Cognitive Services で学習モデル（＝目的に合った認知機能）を作成した後で、その結果を考察してみます。<br /><br />
+Cognitive Services で学習モデル（＝目的に合った認知機能）を作成した後で、その結果を考察してみます。
 
 ---
+
 ハンズオンは以下の順番で進めます。
 
 1. [**Cognitive Services** 全体を俯瞰する](01_CognitiveServices.md)
