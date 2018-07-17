@@ -7,6 +7,7 @@
 <br /><br />
 
 ---
+
 ## Custom Vision が有用なケース
 
 例として、以下の画像を [Computer Vision](https://azure.microsoft.com/ja-jp/services/cognitive-services/computer-vision/) で分析してみます。
@@ -28,6 +29,7 @@
 本ワークショップでは、マイクロソフトアカウント取得の手順は紹介しません。アカウントを持ってない場合は、**[こちらのページ](https://www.microsoft.com/ja-jp/msaccount/signup/default.aspx)** を参考にアカウントを取得してください。 <br /><br />
 
 ***
+
 ## Custom Vision の学習モデルの作成
 
 
@@ -92,6 +94,7 @@
 例えば、人の顔などの画像を適用した場合、どのような結果が返されるでしょうか。 <br /><br />
 
 ***
+
 ## 別の学習モデル
 
 **別の学習モデル** を作って、精度に違いが出ることを確認してみます。

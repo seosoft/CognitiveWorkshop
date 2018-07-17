@@ -17,6 +17,7 @@ PowerApps は「ノンコーディング」と言われることもあります�
 <img src="Assets/Images/dokiapp_sample.png" width="420px" />
 
 ---
+
 ## Custom Vision の Project ID、キーを確認
 
 PowerApps から Custom Vision を利用するには、Project ID および Prediction Key が必要になります。<br />
@@ -28,19 +29,18 @@ PowerApps から Custom Vision を利用するには、Project ID および Pred
 
 2.  Custom Vision の Project ID と Prediction Key とを確認します。<br />
 サインインに成功したら、前の手順の [**土器判定 Custom Vision**](02_CustomVision.md) プロジェクトを選択します。 <br />
-**Settings** アイコン (歯車アイコン)をクリックして設定画面を開き、**Project ID** および **Prediction Key** をメモ帳などにコピーします。これらの値はあとで使います。<br />
-<img src="Assets/Images/cv_selectproject_for_getting_key.png" width="420px" />
-<img src="Assets/Images/cv_projectid_predkey.png" width="420px" />
-<br /><br />
+**Settings** アイコン (歯車アイコン)をクリックして設定画面を開き、**Project ID** および **Prediction Key** をメモ帳などにコピーします。これらの値は後で使います。<br />
+<img src="Assets/Images/cv_selectproject_for_getting_key.png" width="420px" /><br />
+<img src="Assets/Images/cv_projectid_predkey.png" width="420px" /><br /><br />
 
 ---
+
 ## PowerApps で Custom Vision に接続
 
 PowerApps では、外部の Web サービスを利用するには、事前にそのサービスの Connector を登録しておく必要があります。<br />
 PowerApps のアプリで Custom Vision を利用する際には、以下の手順で Connector を登録します。<br />
 
-1. PowerApps にサインインします。 <br />
-[**PowerApps**](https://web.powerapps.com/) にサインインします。<br />
+1. [**PowerApps**](https://web.powerapps.com/) にサインインします。<br />
 <img src="Assets/Images/powerapps_homepage.png" width="420px" />
 
 2. ホームページの左ペインで **データ** - **接続** をクリックします。 <br />
@@ -58,6 +58,7 @@ Custom Vision のサイトでコピーしておいた **Prediction Key** を入�
 <img src="Assets/Images/pa_cv_setting.png" width="420px" />
 
 ---
+
 ## 新しいアプリの開発
 
 ここまでで、新しく PowerApps アプリ開発の準備が整いました。<br /><br />
@@ -76,6 +77,7 @@ Custom Vision のサイトでコピーしておいた **Prediction Key** を入�
 <img src="Assets/Images/pa_newapp_design.png" width="420px" />
 
 ---
+
 ## アプリの設定
 
 アプリの画面デザインをする前に、アプリ名とアイコンを設定して、まず一度保存しておきます。
@@ -98,6 +100,7 @@ PowerApps では保存が自動的に実行されるので、普段は保存に�
 <img src="Assets/Images/pa_back_to_design.png" width="420px" />
 
 ---
+
 ## 画面のデザイン
 
 いよいよ PowerApps 開発の本体に入ります。
@@ -107,15 +110,15 @@ PowerApps では保存が自動的に実行されるので、普段は保存に�
 デザイン画面のメニューの **挿入** を選択するとコントロールの一覧が表示されます。<br />
 コントロールを選択するとスクリーン上に置かれます。位置やサイズを適宜変更してください。<br />
 <img src="Assets/Images/pa_layout_control.png" width="420px" />
-<img src="Assets/Images/pa_layout_all_controls.png" width="420px" />
-<br />
+<img src="Assets/Images/pa_layout_all_controls.png" width="420px" /><br />
+
 - カメラ ・・・ **メディア** - **カメラ**
 - 画像 ・・・ **メディア** - **画像**
 - ラベル ・・・ コントロール一覧の **一番左**
-- ラベル <br />
-※ラベルは 2個配置
+- ラベル (※ラベルは 2個配置)
 
 ---
+
 ## アプリのプレビュー (カメラコントロールの動作確認)
 
 ここで一度、アプリをプレビュー実行してみます。
@@ -131,6 +134,7 @@ PowerApps の画面が、アプリのプレビューのみになり、実際に�
 プレビューの右上の **×** をクリックしてプレビューを閉じます。デザイン画面に戻ります。
 
 ---
+
 ## Custom Vision をデータに追加
 
 カメラで撮影した画像を Custom Vision に送信するために、PowerApps のデータに Custom Vision を追加します。<br /><br />
@@ -153,6 +157,7 @@ Prediction Key は先ほどの手順で、Custom Vision の設定ページから
 以上の手順で、作成しているアプリから Custom Vision に接続できるようになりました。
 
 ---
+
 ## プロパティ値の設定（カメラコントロールの OnSelect）
 
 PowerApps ではいわゆるコーディングは行いませんが、**Excel の関数** と似た感じで、コントロールの **プロパティに変数の名前や関数などを設定** していきます。<br />
@@ -193,6 +198,7 @@ PowerApps は画面右上のプレビュー実行アイコンで実行する以�
 <img src="Assets/Images/pa_variables_pic.png" width="420px" />
 
 ---
+
 ## プロパティ値の設定（残りのコントロール）
 
 カメラコントロール以外のコントロールについてもプロパティを設定して、アプリを完成させます。
@@ -213,6 +219,7 @@ Custom Vision は画像の分類で複数の候補を返してくるため、一
 以上で、PowerApps アプリ作成は完了です。最後にもう一度プレビュー実行してみます。
 
 ---
+
 ## プレビュー実行でアプリの完成を確認
 
 手順通りに作っていれば、[**土器判定 Custom Vision**](02_CustomVision.md) プロジェクトを呼び出しています。<br />
